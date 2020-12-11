@@ -1,0 +1,52 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+a {
+  @apply text-blue-600 cursor-pointer underline;
+}
+
+circle.score-ring {
+  transition: stroke-dashoffset 2s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.tweet-button {
+  background-color: #03A9F4;
+  @apply px-2 py-1 rounded-md inline-block no-underline;
+}
+
+.tweet-button span {
+  @apply flex items-center text-white text-xs;
+}
+
+.spinner {
+  animation: rotate 2s linear infinite;
+}
+  
+.spinner .path {
+  stroke-linecap: round;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}

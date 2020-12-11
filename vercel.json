@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "src": "(.*)",
+      "headers": {
+        "Content-Security-Policy": "default-src 'self'; object-src 'none'; img-src 'self'",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN"
+      }
+    }
+  ]
+}
