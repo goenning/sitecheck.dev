@@ -203,7 +203,7 @@ export default function Home(props: HomeProps): JSX.Element {
 
           <section className="text-gray-700 body-font">
             <div className="container px-5 mx-auto">
-              <h2 className="sm:text-2xl text-xl font-medium title-font mb-4 text-gray-900">Response</h2>
+              <h2 className="sm:text-2xl font-medium text-xs title-font mb-4 text-gray-900">Response</h2>
               <table>
                 <tbody>
                   <TableRow name="Status" content={<StatusCodeBadge statusCode={result.statusCode} />} />
