@@ -206,7 +206,7 @@ export default function Home(props: HomeProps): JSX.Element {
               <h2 className="sm:text-2xl text-xl font-medium title-font mb-4 text-gray-900">Response</h2>
               <table>
                 <tbody>
-                  <TableRow name="Status Code" content={<StatusCodeBadge statusCode={result.statusCode} />} />
+                  <TableRow name="Status" content={<StatusCodeBadge statusCode={result.statusCode} />} />
 
                   {Object.keys(result.rawHeaders).map((key) => (
                     <HeaderTableRow key={key} name={key} value={result.rawHeaders[key]} showRecommendation={true} />

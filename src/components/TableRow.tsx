@@ -27,7 +27,7 @@ interface HeaderTableRowProps {
   showRecommendation?: boolean
 }
 
-export function HeaderTableRow(props: HeaderTableRowProps): JSX.Element {
+export function HeaderTableRow(props: HeaderTableRowProps): JSX.Element | null {
   if (props.name === 'server') {
     return (
       <TableRow
@@ -37,6 +37,10 @@ export function HeaderTableRow(props: HeaderTableRowProps): JSX.Element {
         message="A server might usually expose the technology used on your server and it's recommended to avoid using it if possible."
       />
     )
+  }
+
+  if (props.name === 'status') {
+    return null
   }
 
   if (props.name === 'strict-transport-security') {
