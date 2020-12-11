@@ -219,6 +219,14 @@ export default function Home(props: HomeProps): JSX.Element {
           <MissingHeadersSection headers={result.rawHeaders} />
         </>
       )}
+
+      <div className="container p-5 mt-24 mx-auto border-t border-gray-300 text-center">
+        This is an open source project. Help us improve it{' '}
+        <a target="_blank" rel="noreferrer" href="https://github.com/goenning/sitecheck.dev">
+          https://github.com/goenning/sitecheck.dev
+        </a>
+        .
+      </div>
     </>
   )
 }

@@ -6,13 +6,14 @@ interface TableRowProps {
 }
 
 export function TableRow(props: TableRowProps): JSX.Element {
+  const longValue = props.name === 'set-cookie'
   const color = props.type === 'good' ? 'text-green-600' : props.type === 'bad' ? 'text-red-600' : props.type === 'nok' ? 'text-yellow-600' : 'text-gray-500'
   return (
     <tr className="border-b border-gray-300">
       <td style={{ width: '240px' }} className={`pr-4 py-2 text-right text-xs font-medium ${color} uppercase whitespace-nowrap`}>
         {props.name}
       </td>
-      <td className="py-1">
+      <td className={`py-1 ${longValue && 'break-all'}`}>
         {props.content}
         {props.message && <p className={`text-xs ${color}`}>{props.message}</p>}
       </td>
