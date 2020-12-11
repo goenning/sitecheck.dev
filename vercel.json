@@ -3,7 +3,7 @@
     {
       "src": "(.*)",
       "headers": {
-        "Content-Security-Policy": "default-src 'self'; object-src 'none'; img-src 'self'",
+        "Content-Security-Policy": "default-src 'self'; object-src 'none'; img-src 'self'; script-src 'self' www.googletagmanager.com 'nonce-GTM'; img-src www.googletagmanager.com",
         "X-Content-Type-Options": "nosniff",
         "X-Frame-Options": "SAMEORIGIN"
       }
