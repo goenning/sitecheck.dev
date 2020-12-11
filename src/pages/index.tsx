@@ -79,11 +79,13 @@ export default function Home(props: HomeProps): JSX.Element {
         <meta property="og:title" content="Analyze your website headers and configuration - sitecheck.dev" />
         <meta property="og:url" content="https://sitecheck.dev" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://sitecheck.dev/images/large-screenshot.png" />
         <meta property="og:description" content="Scan your website for best practices on headers and server configuration" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Analyze your website headers and configuration - sitecheck.dev" />
         <meta name="twitter:description" content="Scan your website for best practices on headers and server configuration" />
         <meta name="twitter:url" content="https://sitecheck.dev" />
+        <meta name="twitter:image" content="https://sitecheck.dev/images/large-screenshot.png" />
       </Head>
 
       <section className="text-gray-700 body-font">
